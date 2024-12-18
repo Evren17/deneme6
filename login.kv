@@ -1,0 +1,154 @@
+<LoginScreen>:
+    MDFloatLayout:
+        md_bg_color: 0, 0, 0, 1
+        MDIconButton:
+            icon: "arrow-left"
+            pos_hint: {"center_y": .95}
+            user_font_size: "50sp"
+            theme_text_color: "Custom"
+            text_color: rgba(115, 16, 248, 255)
+        
+        MDLabel:
+            text: "W e l c o m e !"
+            font_name: app.BPoppins 
+            font_size: "35sp"
+            pos_hint: {"center_x": .36 ,"center_y": .91}
+            halign: "center"
+            color: rgba(223, 255, 50, 255)
+        MDLabel:
+            text: "Sign in to continue"
+            font_name: app.BPoppins 
+            font_size: "14sp"
+            size_hint_x: .85
+            pos_hint: {"center_y": .87, "center_x": .28}
+            halign: "center"
+            color: rgba(195,195,195,200)
+
+        Button:
+            text: "LOGIN"
+            size_hint: .21, .065
+            pos_hint: {"center_y": .77, "center_x": .33}
+            background_color: 1, 1, 1, 0  # Beyaz arka plan
+            color: rgba(223, 255, 50, 200)
+            font_name: app.BPoppins
+            font_size: "25sp"
+        Button:
+            text: "SIGNUP"
+            size_hint: .23, .065
+            pos_hint: {"center_y": .77, "center_x": .57}
+            background_color: 1, 1, 1, 0  
+            color: rgba(195,195,195,200)
+            font_name: app.BPoppins
+            font_size: "25sp"
+
+
+        MDFloatLayout:
+            size_hint: .7, .07
+            pos_hint: {"center_x": .5, "center_y": .63}
+            TextInput:
+                id: email_text
+                hint_text: 'Email'  
+                font_name: app.IPoppins
+                size_hint_y: .75
+                pos_hint: {"center_x": .43, "center_y": .5}
+                background_color: 1, 1, 1, 0
+                foreground_color: rgba(255, 255, 255, 255)
+                cursor_color: rgba(255, 255, 255, 255)
+                color: rgba(255, 255, 255, 255)
+                font_size: "16sp"
+                cursor_width: "2sp"
+                multiline: False
+            MDFloatLayout:
+                pos_hint: {"center_x": .45, "center_y": .0}
+                size_hint_y: .03
+                md_bg_color: rgba(178, 178,178, 255)
+
+
+        MDFloatLayout:
+            size_hint: .7, .07
+            pos_hint: {"center_x": .5, "center_y": .5}
+            TextInput:
+                id: password_text
+                hint_text: 'Password'  
+                font_name: app.IPoppins
+                size_hint_y: .75
+                pos_hint: {"center_x": .43, "center_y": .5}
+                background_color: 1, 1, 1, 0
+                foreground_color: rgba(255, 255, 255, 255)
+                cursor_color: rgba(255, 255, 255, 255)
+                color: rgba(255, 255, 255, 255)
+                font_size: "16sp"
+                cursor_width: "2sp"
+                multiline: False
+                password: True
+            MDFloatLayout:
+                pos_hint: {"center_x": .45, "center_y": .0}
+                size_hint_y: .03
+                md_bg_color: rgba(178, 178,178, 255)
+        MDLabel:
+            id: warning_text
+            text: ""
+            color: rgba(255, 69, 0, 255)
+            pos_hint: {"center_y": .43, "center_x": .27}
+            font_size: "14sp"
+            font_name: app.BPoppins
+            halign: "center"
+        
+        Button:
+            text: "LOGIN"
+            size_hint: .55, .065
+            pos_hint: {"center_y": .37, "center_x": .5}
+            background_color: 1, 1, 1, 1  # Beyaz arka plan
+            background_normal: ""  # Varsayılan arka planı kaldırır
+            background_down: ""  # Tıklanma anındaki arka planı kaldırır
+            color: rgba(115, 16, 248, 255)  # Mor yazı rengi
+            font_name: app.BPoppins
+            font_size: "17sp"
+
+
+        MDTextButton:
+            text: "Forgot Password ?"
+            pos_hint: {"center_x": .5, "center_y": .31}
+            color: rgba(135, 133, 193, 255)
+            font_size: "12sp"
+            font_name: app.BPoppins
+
+                
+        MDLabel:
+            text: "or"
+            color: rgba(135, 133, 193, 255)
+            pos_hint: {"center_y": .26}
+            font_size: "14sp"
+            font_name: app.BPoppins
+            halign: "center"
+        MDFloatLayout:
+            md_bg_color: rgba(178, 178, 178, 255)
+            size_hint: .3, .002
+            pos_hint: {"center_x": .3, "center_y": .258}
+        MDFloatLayout:
+            md_bg_color: rgba(178, 178, 178, 255)
+            size_hint: .3, .002
+            pos_hint: {"center_x": .7, "center_y": .258}
+
+        MDLabel:
+            text: " Social Media Login"
+            font_name: app.BPoppins
+            font_size: "13sp"
+            halign: "center"
+            pos_hint: {"center_y": .19}
+            color: rgba(135, 133, 193, 255)
+
+        MDGridLayout:
+            cols: 3
+            size_hint: .48, .07
+            pos_hint: {"center_x": .5, "center_y": .1}
+
+            IconButton:
+                source: app.insta_icon
+
+            IconButton:
+                source: app.face_icon
+
+            IconButton:
+                source: app.google_icon
+
