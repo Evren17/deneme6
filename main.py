@@ -12,13 +12,13 @@ class IconButton(ButtonBehavior, Image):
 
 
 class Slope(MDApp):
-    BPoppins = "app\poppins_bold.ttf"
-    IPoppins = "app\Poppins-Italic.ttf"
+    BPoppins = "poppins_bold.ttf"
+    IPoppins = "Poppins-Italic.ttf"
 
-    logo_image = "app\PickFlick.png"  
-    face_icon = "app\iface.png"
-    insta_icon = "app\insta.png"
-    google_icon =  "app\google.png"
+    logo_image = "PickFlick.png"  
+    face_icon = "iface.png"
+    insta_icon = "insta.png"
+    google_icon =  "google.png"
        
     def build(self):
         Builder.load_file("login.kv") 
