@@ -21,7 +21,7 @@ class Slope(MDApp):
     google_icon =  "app\image\google.png"
        
     def build(self):
-        Builder.load_file("app\iscreen\login.kv") 
+        Builder.load_file("login.kv") 
 
 
         sm= ScreenManager()
