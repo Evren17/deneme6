@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = loginTrys
+title = loginTryss
 
 # (str) Package name
-package.name = loginsss
+package.name = loginssss
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
